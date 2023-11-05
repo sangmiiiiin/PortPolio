@@ -4,7 +4,7 @@ const commonSocialIcon = `
     width: 3vw;
 `
 
-const fadeInUp = keyframes`
+export const fadeInUp = keyframes`
     from {
         opacity: 0;
         transform: translateY(20px);
