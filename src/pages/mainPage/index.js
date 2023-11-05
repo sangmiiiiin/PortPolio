@@ -1,9 +1,14 @@
 import React, { useState } from "react";
-import { AboutContainer, AboutSection, Introduce, ProfileImg, SubIntroduce } from "./About/AboutSection";
+import { AboutContainer, AboutSection, Introduce, ProfileImg, SubIntroduce } from "../../components/About/AboutSection";
+import { ProjectImg, ProjectSection, ProjectTitle } from "../../components/Project/ProjectSection";
+
+import { useScroll } from "../../hooks/useScroll";
+
 import { Fade } from "react-bootstrap";
-import ProfileImage from "../image/IMG_8109.jpg"
-import { ProjectSection, ProjectTitle } from "./Project/ProjectSection";
-import { useScroll } from "../hooks/useScroll";
+
+import ProfileImage from "../../image/IMG_8109.jpg";
+import ProjectImage from "../../image/logo2.jpg";
+
 
 export const Index = () => {
     const [introduce, setIntroduce] = useState(false);
@@ -35,7 +40,7 @@ export const Index = () => {
         <ProjectSection>
             <ProjectTitle>Project</ProjectTitle>
 
-
+            <ProjectImg src={ProjectImage}/>
         </ProjectSection>
         </>
     );

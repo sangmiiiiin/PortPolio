@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Index } from './pages';
+import { Index } from './pages/mainPage/index';
 import { Layout } from './components/Layout';
 
 function App() {
