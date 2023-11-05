@@ -75,7 +75,7 @@ export const Index = () => {
                         MySQL
                     </MySQL> <br />
 
-                    <Button style={{fontWeight: "bold"}}>자세히보기 >></Button>
+                    <Button style={{fontWeight: "bold"}}>자세히보기 →</Button>
                 </ProjectDetail>
             </ProjectContainer>
         </ProjectSection>
