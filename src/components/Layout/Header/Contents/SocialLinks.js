@@ -1,7 +1,19 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const commonSocialIcon = `
     width: 3vw;
+`
+
+const fadeInUp = keyframes`
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 `
 
 export const SocialLink = styled.a`
@@ -19,12 +31,15 @@ export const SocialLinkItems = styled.div`
 
 export const Github = styled.img`
     ${commonSocialIcon}
+    animation: ${fadeInUp} 1s ease-in-out;
 `
 
 export const Instagram = styled.img`
     ${commonSocialIcon}
+    animation: ${fadeInUp} 1.5s ease-in-out;
 `
 
 export const Mail = styled.img`
     ${commonSocialIcon}
+    animation: ${fadeInUp} 2s ease-in-out;
 `

@@ -1,18 +1,23 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
-const Animatedtext =`
-    -moz-animation-delay: 1s;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
+const fadeInDown = keyframes`
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 `
 
 export const Name = styled.h1`
-    ${Animatedtext}
     font-family: 'Racing Sans One', cursive;
     font-size: 4.5em;
+    animation: ${fadeInDown} 3s ease-in-out;
 `
 
 export const Position = styled.p`
-    ${Animatedtext}
     font-size: 1.7em;
+    animation: ${fadeInDown} 1s ease-in-out;
 `
