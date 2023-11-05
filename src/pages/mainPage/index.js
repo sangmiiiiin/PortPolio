@@ -80,7 +80,7 @@ export const Index = () => {
             </ProjectContainer>
         </ProjectSection>
 
-        <div style={{height: "800px"}}></div>  {/* 나중에 지울것 */}
+        <div style={{height: "200px"}}></div>  {/* 나중에 지울것 */}
         </>
     );
 }
