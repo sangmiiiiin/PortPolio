@@ -5,7 +5,7 @@ import ProfileImage from "../image/IMG_8109.jpg"
 import { ProjectSection, ProjectTitle } from "./Project/ProjectSection";
 import { useScroll } from "../hooks/useScroll";
 
-export const About = () => {
+export const Index = () => {
     const [introduce, setIntroduce] = useState(false);
     const [profile, setProfile] = useState(false);
 
