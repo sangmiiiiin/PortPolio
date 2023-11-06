@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Logo = styled.img`
-  margin-top: 1vh;
+  margin-top: 0.3vh;
   width: 5vw;
   height: 2vw;
 `;

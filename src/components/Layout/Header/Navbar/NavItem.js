@@ -8,7 +8,7 @@ const commondImageStyles = `
 export const NavItems = styled.div`
   display: flex;
   gap: 50px;
-  margin-top: 1vh;
+  margin-top: 0.3vh;
 `;
 
 export const NavItem = styled.a`
