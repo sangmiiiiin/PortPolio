@@ -29,7 +29,7 @@ export const Index = () => {
 
     return(
         <>
-        <AboutSection>
+        <AboutSection id="about">
             <AboutContainer>
                 <ProfileImg fade={profile} src={ProfileImage}/>
             </AboutContainer>
@@ -42,7 +42,7 @@ export const Index = () => {
             </Fade>
         </AboutSection>
 
-        <ProjectSection>
+        <ProjectSection id="project">
             <ProjectTitle>Project</ProjectTitle>
 
             <ProjectContainer>
