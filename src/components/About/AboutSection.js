@@ -15,7 +15,6 @@ export const AboutSection = styled.div`
     background-color:#CF806A;
     font-family: 'Roboto', sans-serif;
     color: white;
-    margin-top: -60px;
     text-align: center;
     padding-bottom: 10vh;
 `;

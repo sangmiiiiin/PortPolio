@@ -7,7 +7,7 @@ import MailImg from "../../../../image/envelope-fill.svg";
 
 const HeaderContents = styled.div`
     text-align: center;
-    padding-top: 10vh;
+    padding-top: 25vh;
     color: white;
 `
 
