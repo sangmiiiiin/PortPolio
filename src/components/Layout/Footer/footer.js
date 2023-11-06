@@ -13,7 +13,7 @@ export const Footer =() => {
         <>
             <FooterContainer>
             Coded with <i className="bi bi-heart-fill"></i> by 유상민<br />
-            <i class="bi bi-c-circle"></i> 2023  <i class="bi bi-geo-alt-fill"></i> Seoul, Korea
+            <i className="bi bi-c-circle"></i> 2023  <i className="bi bi-geo-alt-fill"></i> Seoul, Korea
             </FooterContainer>
         </>
     );
