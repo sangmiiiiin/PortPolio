@@ -1,5 +1,6 @@
 import styled, {keyframes} from "styled-components";
 import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 
 const technologiesUsed = `
     font-family: 'Noto Sans KR', sans-serif;
@@ -105,4 +106,17 @@ export const MySQL = styled(Form.Label)`
     background-color: Green;
     color: white;
     margin-left: 0.5vw;
+`
+
+export const StyledButton = styled(Button)`
+    font-weight: bold;
+    border: none;
+    background-color: #42A5F5;
+`
+
+export const StyledButton2 = styled(Button)`
+    margin-left: 3%;
+    font-weight: bold;
+    border: none;
+    background-color: #66BB6A;
 `
