@@ -9,7 +9,7 @@ import { Carousel, CarouselItem, Fade } from "react-bootstrap";
 
 import ProfileImage from "../../image/IMG_8109.jpg";
 import ProjectImage from "../../image/projectImage.jpg";
-import { Project1Container, Project1ContentContainer, Project1Contents, Project1Img, Project1Subtitle, Project1Title, Project1Wrapper } from "../../components/Project/Project1";
+import { Project1Container, Project1ContentContainer, Project1Contents, Project1Img, Project1Subtitle, Project1Title, Project1Wrapper, Project2Container } from "../../components/Project/Project1";
 
 import mainImg from "../../image/bookStockMain.gif";
 import loginImg from "../../image/bookStockLogin.gif";
@@ -17,6 +17,9 @@ import signUpImg from "../../image/bookStockSignUp.gif";
 import bookSignImg from "../../image/bookStockBookSearch.gif"
 import bidImg from "../../image/bookStockBid.gif"
 import searchImg from "../../image/bookStockSearch.gif"
+import pointImg from "../../image/Point.gif"
+import TradingImg from "../../image/myPage.gif"
+import TradingImg2 from "../../image/myPage2.gif"
 
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
@@ -218,33 +221,41 @@ export const Index = () => {
                             </div>
 
                             <div>
-                                <Project1Img src={loginImg} alt="북스탁 로그인 이미지" />
+                                <Project1Img src={pointImg} alt="북스탁 포인트 충전 이미지" />
                                 <Project1ContentContainer>
                                     <Project1Contents>
-                                        ✔️ 로그인
+                                        ✔️ 포인트 충전
                                     </Project1Contents>
                                 </Project1ContentContainer>
                             </div>
 
                             <div>
-                                <Project1Img src={loginImg} alt="북스탁 로그인 이미지" />
+                                <Project1Img src={TradingImg} alt="북스탁 마이페이지 이미지" />
                                 <Project1ContentContainer>
                                     <Project1Contents>
-                                        ✔️ 로그인
+                                        ✔️ 등록한 역경매 목록, 입찰 목록(마이페이지)
+                                    </Project1Contents>
+                                </Project1ContentContainer>
+                            </div>
+
+                            <div>
+                                <Project1Img src={TradingImg2} alt="북스탁 실물거래 이미지" />
+                                <Project1ContentContainer>
+                                    <Project1Contents>
+                                        ✔️ 등록한 택배 거래(주소입력, 운송장번호 입력, 구매확정)
                                     </Project1Contents>
                                 </Project1ContentContainer>
                             </div>
                         </Slider>
                     </Project1Container>
+
+                    <Project2Container>
+                    <Project1Title>포트폴리오 웹사이트</Project1Title>
+                        <Project1Subtitle>2023.11 (개인 프로젝트)</Project1Subtitle>
+
+                    </Project2Container>
                 </Project1Wrapper>
-
-
-
             </ProjectSection>
-
-
-
-            <div style={{ height: "200px" }}></div>  {/* 나중에 지울것 */}
         </>
     );
 }

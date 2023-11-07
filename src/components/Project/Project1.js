@@ -1,10 +1,8 @@
 import styled from "styled-components";
 export const Project1Wrapper = styled.div`
     width: 100%;
-    height: 110vh;
     padding: 5%;
     background-color: #FFCA28;
-
     margin-top: 25vh;
 `
 
@@ -19,6 +17,7 @@ export const Project1Title = styled.h1`
     font-family: 'Orbit', sans-serif;
     text-align: center;
     font-size: 45px;
+    font-weight: bold;
 `
 
 export const Project1Subtitle = styled.h6`
@@ -41,9 +40,21 @@ export const Project1ContentContainer = styled.div`
 `
 
 export const Project1Contents = styled.div`
-    margin-bottom: 0.6%;
+    margin-bottom: 0%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
 `
 
 export const Project1Contents2 = styled.div`
 
+`
+
+export const Project2Container = styled.div`
+    margin-top: 5%;
+    background-color: white;
+    height: 90vh;
+    border-radius: 30px;
+    padding-top: 3%;
 `
