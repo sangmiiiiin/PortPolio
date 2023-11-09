@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+
+export const DeploymentURL = styled.div`
+    font-size: 1.2em;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 2vw;
+`
 export const SubTitle = styled.h1`
     display: inline;
 `
@@ -31,6 +38,13 @@ export const StyledText = styled.span`
     color: #FF1744
 `
 
-export const ListText = styled.li`
-
+export const DeploymentContainer = styled.div`
+    display: flex;
+    justify-content: center;
+`
+export const NetlifyText = styled.div`
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2vh;
 `
