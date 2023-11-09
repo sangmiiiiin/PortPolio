@@ -85,7 +85,7 @@ export const Index = () => {
             <ProjectSection id="project">
                 <ProjectTitle>Project</ProjectTitle>
                 <Carousel
-                    interval={3000}
+                    interval={4500}
                     indicators={true}
                 >
                     <CarouselItem>
@@ -162,6 +162,11 @@ export const Index = () => {
                                 <StyledButton>
                                     산출물보기 →
                                 </StyledButton>
+                                <StyledButton2>
+                                    <Link to='portpolio'>
+                                        시연이미지 →
+                                    </Link>
+                                </StyledButton2>
                             </ProjectDetail>
                         </ProjectContainer>
                     </CarouselItem>
@@ -194,12 +199,12 @@ export const Index = () => {
                                 </JavaScript> <br />
 
                                 <StyledButton onClick={openMBTI}>
-                                    산출물보기 →
+                                    자세히보기 →
                                 </StyledButton>
 
                                 <StyledButton2>
-                                    <Link to='bookstock'>
-                                        자세히보기 →
+                                    <Link to='MBTI'>
+                                        시연이미지 →
                                     </Link>
                                 </StyledButton2>
                                 <ProjectModal2 isOpen={showMBTI} isClose={closeMBTI} />
@@ -296,13 +301,13 @@ export const Index = () => {
                             </div>
                         </Slider>
                     </Project1Container>
-
+                    <div id="portpolio"></div>
                     <Project2Container>
                     <Project1Title>포트폴리오 웹사이트</Project1Title>
                         <Project1Subtitle>2023.11 (개인 프로젝트)</Project1Subtitle>
 
                     </Project2Container>
-
+                    <div id="MBTI"></div>
                     <Project3Container>
                     <Project1Title>MBTI 조합 분석 사이트</Project1Title>
                         <Project1Subtitle>2023.11 (개인 프로젝트)</Project1Subtitle>

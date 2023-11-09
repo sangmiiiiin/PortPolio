@@ -17,6 +17,23 @@ export const SkillImgContainer = styled.div`
     margin-bottom: 10vh;
 `;
 
+export const FrontEndContainer = styled.div`
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+    font-weight: bold;
+`
+export const BackEndContainer = styled.div`
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+    font-weight: bold;
+`
+
 export const SkillImg = styled.img`
     width: 10vw;
     margin-top: 2vw;

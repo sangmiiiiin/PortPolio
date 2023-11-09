@@ -1,5 +1,5 @@
 import { Modal, Button } from 'react-bootstrap';
-import { DeploymentContainer, DeploymentURL, ExplainContainer, NetlifyText, SkillImg, SkillImgContainer, StyledText, SubTitle } from '../../components/Project/ModalComponent';
+import { DeploymentContainer, DeploymentURL, ExplainContainer, FrontEndContainer, NetlifyText, SkillImg, SkillImgContainer, StyledText, SubTitle } from '../../components/Project/ModalComponent';
 import HtmlCssJsImg from '../../image/HTMLCSSJS.png';
 import NetlifyImg from '../../image/netlify.png';
 import { Link } from 'react-router-dom';
@@ -39,7 +39,9 @@ export const ProjectModal2 = ({ isOpen, isClose }) => {
                 <SubTitle>🔨 SKILLS</SubTitle>
                 <hr />
                 <SkillImgContainer>
-                    <SkillImg src={HtmlCssJsImg} style={{width: "30vw"}}/>
+                    <FrontEndContainer>
+                        <SkillImg src={HtmlCssJsImg} style={{width: "30vw"}}/>
+                    </FrontEndContainer>
                 </SkillImgContainer>
                 <SubTitle>🌐 Deployment</SubTitle>
                 <hr />
