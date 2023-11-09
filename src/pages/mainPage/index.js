@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AboutContainer, AboutSection, Introduce, ProfileImg, SubIntroduce } from "../../components/About/AboutSection";
-import { ReactJs, Bootstrap, Express, MySQL, ProjectContainer, ProjectDetail, ProjectImg, ProjectMemo, ProjectName, ProjectSection, ProjectTitle, StyledButton, StyledButton2 } from "../../components/Project/ProjectSection";
+import { ReactJs, Bootstrap, Express, MySQL, ProjectContainer, ProjectDetail, ProjectImg, ProjectMemo, ProjectName, ProjectSection, ProjectTitle, StyledButton, StyledButton2, HTML, CSS, JavaScript } from "../../components/Project/ProjectSection";
 import { ProjectModal1 } from "../projectModal";
 
 import { useScroll } from "../../hooks/useScroll";
@@ -9,7 +9,10 @@ import { Carousel, CarouselItem, Fade } from "react-bootstrap";
 
 import ProfileImage from "../../image/IMG_8109.jpg";
 import ProjectImage from "../../image/projectImage.jpg";
-import { Project1Container, Project1ContentContainer, Project1Contents, Project1Img, Project1Subtitle, Project1Title, Project1Wrapper, Project2Container } from "../../components/Project/Project1";
+import ProjectImage2 from "../../image/projectImage2.jpg";
+import { Project1Container, Project1ContentContainer, Project1Contents, Project1Img, Project1Subtitle, Project1Title, Project1Wrapper } from "../../components/Project/Project1";
+import { Project2Container } from "../../components/Project/project2";
+import { Project3Container } from "../../components/Project/project3";
 
 import mainImg from "../../image/bookStockMain.gif";
 import loginImg from "../../image/bookStockLogin.gif";
@@ -25,6 +28,7 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Link } from "react-scroll";
+
 
 
 export const Index = () => {
@@ -75,7 +79,7 @@ export const Index = () => {
             <ProjectSection id="project">
                 <ProjectTitle>Project</ProjectTitle>
                 <Carousel
-                    interval={null}
+                    interval={3000}
                     indicators={true}
                 >
                     <CarouselItem>
@@ -124,10 +128,10 @@ export const Index = () => {
 
                     <CarouselItem>
                         <ProjectContainer>
-                            <ProjectImg fadeLeft={projectImg} src={ProjectImage} />
+                            <ProjectImg fadeLeft={projectImg} src={ProjectImage2} />
                             <ProjectDetail fadeRight={projectDetail}>
                                 <ProjectName>
-                                    두번째 프로젝트
+                                    포트폴리오 웹사이트
                                 </ProjectName>
 
                                 <ProjectMemo>
@@ -147,11 +151,7 @@ export const Index = () => {
 
                                 <Express>
                                     StyledComponent
-                                </Express>
-
-                                <MySQL>
-                                    Redux
-                                </MySQL> <br />
+                                </Express> <br />
 
                                 <StyledButton onClick={openModal}>
                                     산출물보기 →
@@ -159,6 +159,48 @@ export const Index = () => {
                             </ProjectDetail>
                         </ProjectContainer>
                     </CarouselItem>
+
+                    <CarouselItem>
+                        <ProjectContainer>
+                            <ProjectImg fadeLeft={projectImg} src={ProjectImage} />
+                            <ProjectDetail fadeRight={projectDetail}>
+                                <ProjectName>
+                                    MBTI 성향 조합 테스트
+                                </ProjectName>
+
+                                <ProjectMemo>
+                                    요즘 가장 핫한 MBTI !<br />
+                                    나와 상대방의 MBTI 궁합은 어떨까?<br />
+                                    간단하게 알아보자<br />
+                                    MBTI 성향 조합 테스트 !<br />
+                                </ProjectMemo>
+
+                                <HTML>
+                                    HTML
+                                </HTML>
+
+                                <CSS>
+                                    CSS
+                                </CSS>
+
+                                <JavaScript>
+                                    JavaScript
+                                </JavaScript> <br />
+
+                                <StyledButton onClick={openModal}>
+                                    산출물보기 →
+                                </StyledButton>
+
+                                <StyledButton2>
+                                    <Link to='bookstock'>
+                                        자세히보기 →
+                                    </Link>
+                                </StyledButton2>
+                                <ProjectModal1 isOpen={showModal} isClose={closeModal} />
+                            </ProjectDetail>
+                        </ProjectContainer>
+                    </CarouselItem>
+
                 </Carousel>
 
                 <Project1Wrapper id='bookstock'>
@@ -254,6 +296,12 @@ export const Index = () => {
                         <Project1Subtitle>2023.11 (개인 프로젝트)</Project1Subtitle>
 
                     </Project2Container>
+
+                    <Project3Container>
+                    <Project1Title>MBTI 조합 분석 사이트</Project1Title>
+                        <Project1Subtitle>2023.11 (개인 프로젝트)</Project1Subtitle>
+
+                    </Project3Container>
                 </Project1Wrapper>
             </ProjectSection>
         </>

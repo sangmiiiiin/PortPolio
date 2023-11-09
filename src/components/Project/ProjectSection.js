@@ -107,7 +107,26 @@ export const MySQL = styled(Form.Label)`
     color: white;
     margin-left: 0.5vw;
 `
+export const HTML = styled(Form.Label)`
+    ${technologiesUsed}
+    background-color: red;
+    color: white;
+    margin-left: 0.5vw;
+`
 
+export const CSS = styled(Form.Label)`
+    ${technologiesUsed}
+    background-color: blue;
+    color: white;
+    margin-left: 0.5vw;
+`
+
+export const JavaScript = styled(Form.Label)`
+    ${technologiesUsed}
+    background-color: Yellow;
+    color: white;
+    margin-left: 0.5vw;
+`
 export const StyledButton = styled(Button)`
     font-weight: bold;
     border: none;

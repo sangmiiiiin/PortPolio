@@ -22,6 +22,15 @@ export const WbsImg = styled.img`
     margin-bottom: 10vh;
 `
 
-export const ExplainContainer = styled.div`
+export const ExplainContainer = styled.h6`
     width: 100%;
+    margin-bottom: 10vh;
+    
+`
+export const StyledText = styled.span`
+    color: #FF1744
+`
+
+export const ListText = styled.li`
+
 `

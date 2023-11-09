@@ -44,17 +44,4 @@ export const Project1Contents = styled.div`
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: bold;
     font-size: 20px;
-
-`
-
-export const Project1Contents2 = styled.div`
-
-`
-
-export const Project2Container = styled.div`
-    margin-top: 5%;
-    background-color: white;
-    height: 90vh;
-    border-radius: 30px;
-    padding-top: 3%;
 `
