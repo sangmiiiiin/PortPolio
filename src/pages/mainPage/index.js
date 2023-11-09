@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { AboutContainer, AboutSection, Introduce, ProfileImg, SubIntroduce } from "../../components/About/AboutSection";
 import { ReactJs, Bootstrap, Express, MySQL, ProjectContainer, ProjectDetail, ProjectImg, ProjectMemo, ProjectName, ProjectSection, ProjectTitle, StyledButton, StyledButton2, HTML, CSS, JavaScript } from "../../components/Project/ProjectSection";
-import { ProjectModal1 } from "../projectModal";
+import { ProjectModal1 } from "../projectModal/Bookstock";
 
 import { useScroll } from "../../hooks/useScroll";
 
@@ -10,6 +10,7 @@ import { Carousel, CarouselItem, Fade } from "react-bootstrap";
 import ProfileImage from "../../image/IMG_8109.jpg";
 import ProjectImage from "../../image/projectImage.jpg";
 import ProjectImage2 from "../../image/projectImage2.jpg";
+import ProjectImage3 from "../../image/projectImage3.jpg";
 import { Project1Container, Project1ContentContainer, Project1Contents, Project1Img, Project1Subtitle, Project1Title, Project1Wrapper } from "../../components/Project/Project1";
 import { Project2Container } from "../../components/Project/project2";
 import { Project3Container } from "../../components/Project/project3";
@@ -28,6 +29,7 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Link } from "react-scroll";
+import { ProjectModal2 } from "../projectModal/MBTI";
 
 
 
@@ -36,7 +38,8 @@ export const Index = () => {
     const [profile, setProfile] = useState(false);
     const [projectImg, setProjectImg] = useState(false);
     const [projectDetail, setProjectDetail] = useState(false);
-    const [showModal, setShowModal] = useState(false);
+    const [showBookStock, setShowBookStock] = useState(false);
+    const [showMBTI, setShowMBTI] = useState(false);
 
     useScroll((scrollY) => {
         const threshold = 300;
@@ -49,8 +52,11 @@ export const Index = () => {
         setProjectDetail(scrollY > threshold3);
     });
 
-    const openModal = () => setShowModal(true);
-    const closeModal = () => setShowModal(false);
+    const openBookStock = () => setShowBookStock(true);
+    const closeBookStock = () => setShowBookStock(false);
+
+    const openMBTI = () => setShowMBTI(true);
+    const closeMBTI = () =>setShowMBTI(false);
 
     const settings = {
         dots: true,
@@ -112,16 +118,16 @@ export const Index = () => {
                                     MySQL
                                 </MySQL> <br />
 
-                                <StyledButton onClick={openModal}>
-                                    산출물보기 →
+                                <StyledButton onClick={openBookStock}>
+                                    자세히보기 →
                                 </StyledButton>
 
                                 <StyledButton2>
                                     <Link to='bookstock'>
-                                        자세히보기 →
+                                        시연이미지 →
                                     </Link>
                                 </StyledButton2>
-                                <ProjectModal1 isOpen={showModal} isClose={closeModal} />
+                                <ProjectModal1 isOpen={showBookStock} isClose={closeBookStock} />
                             </ProjectDetail>
                         </ProjectContainer>
                     </CarouselItem>
@@ -153,7 +159,7 @@ export const Index = () => {
                                     StyledComponent
                                 </Express> <br />
 
-                                <StyledButton onClick={openModal}>
+                                <StyledButton>
                                     산출물보기 →
                                 </StyledButton>
                             </ProjectDetail>
@@ -162,7 +168,7 @@ export const Index = () => {
 
                     <CarouselItem>
                         <ProjectContainer>
-                            <ProjectImg fadeLeft={projectImg} src={ProjectImage} />
+                            <ProjectImg fadeLeft={projectImg} src={ProjectImage3} />
                             <ProjectDetail fadeRight={projectDetail}>
                                 <ProjectName>
                                     MBTI 성향 조합 테스트
@@ -187,7 +193,7 @@ export const Index = () => {
                                     JavaScript
                                 </JavaScript> <br />
 
-                                <StyledButton onClick={openModal}>
+                                <StyledButton onClick={openMBTI}>
                                     산출물보기 →
                                 </StyledButton>
 
@@ -196,7 +202,7 @@ export const Index = () => {
                                         자세히보기 →
                                     </Link>
                                 </StyledButton2>
-                                <ProjectModal1 isOpen={showModal} isClose={closeModal} />
+                                <ProjectModal2 isOpen={showMBTI} isClose={closeMBTI} />
                             </ProjectDetail>
                         </ProjectContainer>
                     </CarouselItem>

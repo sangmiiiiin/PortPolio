@@ -1,5 +1,5 @@
 import { Modal, Button } from 'react-bootstrap';
-import { ExplainContainer, SkillImg, SkillImgContainer, StyledText, SubTitle, WbsImg } from '../../components/Project/bookstockModal';
+import { ExplainContainer, SkillImg, SkillImgContainer, StyledText, SubTitle, WbsImg } from '../../components/Project/ModalComponent';
 import reactImg from '../../image/reactImg.png';
 import nodeImg from '../../image/nodejsImg.png';
 import bootstrapImg from '../../image/bootstrapImg.png';
