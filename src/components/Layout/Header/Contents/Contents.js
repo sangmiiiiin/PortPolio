@@ -23,13 +23,13 @@ const UnderLine = styled.hr`
 `
 
 export const Contents = () => {
-    return(
+    return (
         <HeaderContents>
             <Name>Sangmin's PortPolio</Name>
             <Position>FrontEnd Developer</Position>
 
             <UnderLine />
-            
+
             <SocialLinkItems>
                 <SocialLink href="https://github.com/sangmiiiiin">
                     <Github src={gitImg} />

@@ -56,7 +56,7 @@ export const Index = () => {
     const closeBookStock = () => setShowBookStock(false);
 
     const openMBTI = () => setShowMBTI(true);
-    const closeMBTI = () =>setShowMBTI(false);
+    const closeMBTI = () => setShowMBTI(false);
 
     const settings = {
         dots: true,
@@ -69,7 +69,8 @@ export const Index = () => {
 
     return (
         <>
-            <AboutSection id="about">
+            <div id="about"></div>
+            <AboutSection>
                 <AboutContainer>
                     <ProfileImg fade={profile} src={ProfileImage} />
                 </AboutContainer>
@@ -81,8 +82,8 @@ export const Index = () => {
                     </div>
                 </Fade>
             </AboutSection>
-
-            <ProjectSection id="project">
+            <div id="project"></div>
+            <ProjectSection>
                 <ProjectTitle>Project</ProjectTitle>
                 <Carousel
                     interval={4500}
@@ -303,13 +304,13 @@ export const Index = () => {
                     </Project1Container>
                     <div id="portpolio"></div>
                     <Project2Container>
-                    <Project1Title>포트폴리오 웹사이트</Project1Title>
+                        <Project1Title>포트폴리오 웹사이트</Project1Title>
                         <Project1Subtitle>2023.11 (개인 프로젝트)</Project1Subtitle>
 
                     </Project2Container>
                     <div id="MBTI"></div>
                     <Project3Container>
-                    <Project1Title>MBTI 조합 분석 사이트</Project1Title>
+                        <Project1Title>MBTI 조합 분석 사이트</Project1Title>
                         <Project1Subtitle>2023.11 (개인 프로젝트)</Project1Subtitle>
 
                     </Project3Container>
