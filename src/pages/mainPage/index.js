@@ -18,13 +18,16 @@ import { Project3Container } from "../../components/Project/project3";
 import mainImg from "../../image/bookStockMain.gif";
 import loginImg from "../../image/bookStockLogin.gif";
 import signUpImg from "../../image/bookStockSignUp.gif";
-import bookSignImg from "../../image/bookStockBookSearch.gif"
-import bidImg from "../../image/bookStockBid.gif"
-import searchImg from "../../image/bookStockSearch.gif"
-import pointImg from "../../image/Point.gif"
-import TradingImg from "../../image/myPage.gif"
-import TradingImg2 from "../../image/myPage2.gif"
+import bookSignImg from "../../image/bookStockBookSearch.gif";
+import bidImg from "../../image/bookStockBid.gif";
+import searchImg from "../../image/bookStockSearch.gif";
+import pointImg from "../../image/Point.gif";
+import TradingImg from "../../image/myPage.gif";
+import TradingImg2 from "../../image/myPage2.gif";
 
+import portPolioMainImg from '../../image/portpolioMain.gif';
+
+import MbtiMainImg from '../../image/MBTImainImg.gif';
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -313,13 +316,33 @@ export const Index = () => {
                     <Project2Container>
                         <Project1Title>포트폴리오 웹사이트</Project1Title>
                         <Project1Subtitle>2023.11 (개인 프로젝트)</Project1Subtitle>
-
+                        <Slider {...settings}>
+                            <div>
+                                <Project1Img src={portPolioMainImg} alt="포트폴리오 메인 이미지" />
+                                <Project1ContentContainer>
+                                    <Project1Contents>
+                                        ✔️ 메인페이지
+                                    </Project1Contents>
+                                </Project1ContentContainer>
+                            </div>
+                            <div></div>
+                        </Slider>
                     </Project2Container>
                     <div id="MBTI"></div>
                     <Project3Container>
                         <Project1Title>MBTI 조합 분석 사이트</Project1Title>
                         <Project1Subtitle>2023.11 (개인 프로젝트)</Project1Subtitle>
-
+                        <Slider {...settings}>
+                            <div>
+                                <Project1Img src={MbtiMainImg} alt="MBTI 테스트 페이지" />
+                                <Project1ContentContainer>
+                                    <Project1Contents>
+                                        ✔️ 메인페이지
+                                    </Project1Contents>
+                                </Project1ContentContainer>
+                            </div>
+                            <div></div>
+                        </Slider>
                     </Project3Container>
                 </Project1Wrapper>
             </ProjectSection>
