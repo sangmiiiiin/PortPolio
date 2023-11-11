@@ -18,19 +18,19 @@ export const SkillImgContainer = styled.div`
 `;
 
 export const FrontEndContainer = styled.div`
-    width: 30vw;
+    width: 23vw;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    font-size: 1.5em;
+    font-size: 2rem;
     font-weight: bold;
 `
 export const BackEndContainer = styled.div`
-    width: 30vw;
+    width: 23vw;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    font-size: 1.5em;
+    font-size: 2rem;
     font-weight: bold;
 `
 
