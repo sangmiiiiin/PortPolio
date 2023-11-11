@@ -30,6 +30,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Link } from "react-scroll";
 import { ProjectModal2 } from "../projectModal/MBTI";
+import { ProjectModal3 } from "../projectModal/PortPolio";
 
 
 
@@ -40,6 +41,7 @@ export const Index = () => {
     const [projectDetail, setProjectDetail] = useState(false);
     const [showBookStock, setShowBookStock] = useState(false);
     const [showMBTI, setShowMBTI] = useState(false);
+    const [showPoPol, setShowPoPol] = useState(false);
 
     useScroll((scrollY) => {
         const threshold = 300;
@@ -57,6 +59,10 @@ export const Index = () => {
 
     const openMBTI = () => setShowMBTI(true);
     const closeMBTI = () => setShowMBTI(false);
+
+    const openPoPol = () => setShowPoPol(true);
+    const closePoPol = () => setShowPoPol(false);
+
 
     const settings = {
         dots: true,
@@ -160,14 +166,15 @@ export const Index = () => {
                                     StyledComponent
                                 </Express> <br />
 
-                                <StyledButton>
-                                    산출물보기 →
+                                <StyledButton onClick={openPoPol}>
+                                    자세히보기 →
                                 </StyledButton>
                                 <StyledButton2>
                                     <Link to='portpolio'>
                                         시연이미지 →
                                     </Link>
                                 </StyledButton2>
+                                <ProjectModal3 isOpen={showPoPol} isClose={closePoPol}/>
                             </ProjectDetail>
                         </ProjectContainer>
                     </CarouselItem>
