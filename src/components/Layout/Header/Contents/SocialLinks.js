@@ -45,4 +45,5 @@ export const Instagram = styled.img`
 export const Mail = styled.img`
     ${commonSocialIcon}
     animation: ${fadeInUp} 2s ease-in-out;
+    cursor: pointer;
 `;

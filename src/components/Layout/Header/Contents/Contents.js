@@ -4,6 +4,7 @@ import { Github, Instagram, Mail, SocialLink, SocialLinkItems } from "./SocialLi
 import gitImg from "../../../../image/github.svg";
 import InstaImg from "../../../../image/instagram.svg";
 import MailImg from "../../../../image/envelope-fill.svg";
+import { Email } from "../../../contact/contactSection";
 
 const HeaderContents = styled.div`
     text-align: center;
@@ -23,6 +24,11 @@ const UnderLine = styled.hr`
 `
 
 export const Contents = () => {
+    const email = "kwk680037@gmail.com";
+
+    const handleEmailClick = () => {
+        window.location.href = `mailto:${email}`;
+    };
     return (
         <HeaderContents>
             <Name>Sangmin's PortPolio</Name>
@@ -39,8 +45,9 @@ export const Contents = () => {
                     <Instagram src={InstaImg} />
                 </SocialLink>
 
-                <SocialLink href="#">
+                <SocialLink onClick={handleEmailClick}>
                     <Mail src={MailImg} />
+                    <Email>{email}</Email>
                 </SocialLink>
             </SocialLinkItems>
         </HeaderContents>
