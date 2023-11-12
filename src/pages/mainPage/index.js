@@ -355,6 +355,7 @@ export const Index = () => {
             </ProjectSection>
 
             {/* Start Contact Section */}
+            <div id="contact"></div>
             <ContactContainer>
                 <ContactTitle>
                     Contact Me
