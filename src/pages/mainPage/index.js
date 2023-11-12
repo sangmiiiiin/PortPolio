@@ -34,6 +34,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import { Link } from "react-scroll";
 import { ProjectModal2 } from "../projectModal/MBTI";
 import { ProjectModal3 } from "../projectModal/PortPolio";
+import { ContactButton, ContactContainer, ContactContents, ContactTitle, Email } from "../../components/contact/contactSection";
 
 
 
@@ -73,6 +74,12 @@ export const Index = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+    };
+
+    const email = "kwk680037@gmail.com";
+
+    const handleEmailClick = () => {
+        window.location.href = `mailto:${email}`;
     };
 
 
@@ -346,6 +353,23 @@ export const Index = () => {
                     </Project3Container>
                 </Project1Wrapper>
             </ProjectSection>
+
+            {/* Start Contact Section */}
+            <ContactContainer>
+                <ContactTitle>
+                    Contact Me
+                </ContactTitle>
+
+                <ContactContents>
+                    If you have questions, please feel free to reach out!   
+                </ContactContents>
+
+                <ContactButton onClick={handleEmailClick}>
+                    Email Me <i className="bi bi-airplane-fill"></i>
+                    <Email>{email}</Email>
+                </ContactButton>
+            </ContactContainer>
+            
         </>
     );
 }
