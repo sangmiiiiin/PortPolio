@@ -20,9 +20,19 @@ export const SocialLink = styled.a`
     margin: 5px;
     color: white;
     font-size: 2em;
+    position: relative;
+
     &:hover {
-        border-bottom: 2px solid white;
-      }
+        &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: white;
+        }
+    }
 `;
 
 export const SocialLinkItems = styled.div`
