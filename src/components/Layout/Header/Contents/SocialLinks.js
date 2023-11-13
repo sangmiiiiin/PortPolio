@@ -57,3 +57,9 @@ export const Mail = styled.img`
     animation: ${fadeInUp} 2s ease-in-out;
     cursor: pointer;
 `;
+
+export const Velog = styled.img`
+    ${commonSocialIcon}
+    animation: ${fadeInUp} 2.5s ease-in-out;
+    cursor: pointer;
+`

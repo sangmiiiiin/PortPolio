@@ -1,10 +1,12 @@
 import styled from "styled-components";
 import { Name, Position } from "./Text";
-import { Github, Instagram, Mail, SocialLink, SocialLinkItems } from "./SocialLinks";
+import { Github, Instagram, Mail, SocialLink, SocialLinkItems, Velog } from "./SocialLinks";
 import gitImg from "../../../../image/github.svg";
 import InstaImg from "../../../../image/instagram.svg";
 import MailImg from "../../../../image/envelope-fill.svg";
+import VelogImg from "../../../../image/velogImg.png";
 import { Email } from "../../../contact/contactSection";
+
 
 const HeaderContents = styled.div`
     text-align: center;
@@ -48,6 +50,10 @@ export const Contents = () => {
                 <SocialLink onClick={handleEmailClick}>
                     <Mail src={MailImg} />
                     <Email>{email}</Email>
+                </SocialLink>
+
+                <SocialLink href="https://velog.io/@sangmiiiiin">
+                    <Velog src={VelogImg} />
                 </SocialLink>
             </SocialLinkItems>
         </HeaderContents>
