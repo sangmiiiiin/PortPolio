@@ -17,7 +17,7 @@ const NavbarContainer = styled.nav`
   width: 100%;
   z-index: 1000;
   transition: background-color 0.3s ease;
-  background-color: ${({ scrolled }) => (scrolled ? '#333' : 'transparent')};
+  background-color: ${({ $scrolled }) => ($scrolled ? '#333' : 'transparent')};
 
   padding: 0.7rem;
   display: flex;
@@ -35,7 +35,7 @@ const Navbar = () => {
   });
 
   return (
-    <NavbarContainer scrolled={scrolled}>
+    <NavbarContainer $scrolled={scrolled}>
       <LogoLink href='/'>
         <Logo
           src={myLogo}

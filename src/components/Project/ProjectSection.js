@@ -57,17 +57,17 @@ export const ProjectImg = styled.img`
     border: 0.5px solid lightgray;
     box-shadow: -2px 10px 30px rgba(0, 0, 0, 0.2);
 
-    opacity: ${({ fadeLeft }) => (fadeLeft ? 1 : 0)};
+    opacity: ${({ $fadeLeft }) => ($fadeLeft ? 1 : 0)};
     transition: opacity 0.5s ease-in-out;
-    animation: ${({ fadeLeft }) => (fadeLeft ? fadeIn1 : 'none')} 1s ease-in-out;
+    animation: ${({ $fadeLeft }) => ($fadeLeft ? fadeIn1 : 'none')} 1s ease-in-out;
 `
 
 export const ProjectDetail = styled.div`
     margin-left: 5vw;
 
-    opacity: ${({ fadeRight }) => (fadeRight ? 1 : 0)};
+    opacity: ${({ $fadeRight }) => ($fadeRight ? 1 : 0)};
     transition: opacity 0.5s ease-in-out;
-    animation: ${({ fadeRight }) => (fadeRight ? fadeIn2 : 'none')} 1s ease-in-out;
+    animation: ${({ $fadeRight }) => ($fadeRight ? fadeIn2 : 'none')} 1s ease-in-out;
 `
 
 export const ProjectName = styled.h3`

@@ -88,7 +88,7 @@ export const Index = () => {
             <div id="about"></div>
             <AboutSection>
                 <AboutContainer>
-                    <ProfileImg fade={profile} src={ProfileImage} />
+                    <ProfileImg $fade={profile} src={ProfileImage} />
                 </AboutContainer>
 
                 <Fade in={introduce}>
@@ -107,8 +107,8 @@ export const Index = () => {
                 >
                     <CarouselItem>
                         <ProjectContainer>
-                            <ProjectImg fadeLeft={projectImg} src={ProjectImage} />
-                            <ProjectDetail fadeRight={projectDetail}>
+                            <ProjectImg $fadeLeft={projectImg} src={ProjectImage} />
+                            <ProjectDetail $fadeRight={projectDetail}>
                                 <ProjectName>
                                     BookStock 프로젝트
                                 </ProjectName>
@@ -151,8 +151,8 @@ export const Index = () => {
 
                     <CarouselItem>
                         <ProjectContainer>
-                            <ProjectImg fadeLeft={projectImg} src={ProjectImage2} />
-                            <ProjectDetail fadeRight={projectDetail}>
+                            <ProjectImg $fadeLeft={projectImg} src={ProjectImage2} />
+                            <ProjectDetail $fadeRight={projectDetail}>
                                 <ProjectName>
                                     포트폴리오 웹사이트
                                 </ProjectName>
@@ -191,8 +191,8 @@ export const Index = () => {
 
                     <CarouselItem>
                         <ProjectContainer>
-                            <ProjectImg fadeLeft={projectImg} src={ProjectImage3} />
-                            <ProjectDetail fadeRight={projectDetail}>
+                            <ProjectImg $fadeLeft={projectImg} src={ProjectImage3} />
+                            <ProjectDetail $fadeRight={projectDetail}>
                                 <ProjectName>
                                     MBTI 성향 조합 테스트
                                 </ProjectName>

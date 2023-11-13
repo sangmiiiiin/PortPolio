@@ -34,9 +34,9 @@ export const ProfileImg = styled.img`
 
     margin-top: 10vh;
 
-    opacity: ${({ fade }) => (fade ? 1 : 0)};
+    opacity: ${({$fade }) => ($fade ? 1 : 0)};
     transition: opacity 0.5s ease-in-out;
-    animation: ${({ fade }) => (fade ? fadeIn : 'none')} 1s ease-in-out;
+    animation: ${({ $fade }) => ($fade ? fadeIn : 'none')} 1s ease-in-out;
 `;
 
 export const Introduce = styled.h2`
