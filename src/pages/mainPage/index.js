@@ -362,11 +362,11 @@ export const Index = () => {
                 </ContactTitle>
 
                 <ContactContents>
-                    If you have questions, please feel free to reach out!   
+                    궁금한 점이 있으시면 언제든지 문의해 주세요 !
                 </ContactContents>
 
                 <ContactButton onClick={handleEmailClick}>
-                    Email Me <i className="bi bi-airplane-fill"></i>
+                    이메일 보내기 <i className="bi bi-airplane-fill"></i>
                     <Email>{email}</Email>
                 </ContactButton>
             </ContactContainer>
