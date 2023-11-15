@@ -44,11 +44,19 @@ export const Introduce = styled.h2`
     font-size: 4rem;
     color: white;
     font-weight: bold;
+
+    @media only screen and (max-width: 576px) {
+        font-size: 3rem;
+    }
 `;
 
 export const SubIntroduce = styled.span`
     font-size: 1.8rem;
     color: white;
     font-weight: bold;
+
+    @media only screen and (max-width: 576px) {
+        font-size: 1.2rem;
+    }
 `;
 
