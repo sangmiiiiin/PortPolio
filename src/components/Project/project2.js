@@ -9,6 +9,6 @@ export const Project2Container = styled.div`
     padding-top: 3%;
 
     @media only screen and (max-width: 576px) {
-        height: 60vh;
+        height: 55vh;
     }
 `

@@ -331,7 +331,7 @@ export const Index = () => {
                                         ✔️ 메인페이지
                                     </Project1Contents>
                                 </Project1ContentContainer>
-                            </div>
+                            </div>                      
                             <div></div>
                         </Slider>
                     </Project2Container>
