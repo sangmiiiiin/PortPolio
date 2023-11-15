@@ -38,18 +38,24 @@ export const fadeIn2 = keyframes`
 
 export const ProjectSection = styled.div`
     margin-top: 10vh;
-`
+`;
 
 export const ProjectTitle = styled.h1`
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     text-align: center;
-`
+`;
+
 
 export const ProjectContainer = styled.div`
     display: flex;
     margin-top: 8vw;
     margin-left: 5vw;
+
+    @media only screen and (max-width: 576px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 `
 export const ProjectImg = styled.img`
     width: 45vw;
@@ -60,6 +66,11 @@ export const ProjectImg = styled.img`
     opacity: ${({ $fadeLeft }) => ($fadeLeft ? 1 : 0)};
     transition: opacity 0.5s ease-in-out;
     animation: ${({ $fadeLeft }) => ($fadeLeft ? fadeIn1 : 'none')} 1s ease-in-out;
+
+    @media only screen and (max-width: 576px) {
+        width: 90%;
+        margin-bottom: 5vh;
+    }
 `
 
 export const ProjectDetail = styled.div`

@@ -11,7 +11,7 @@ import ProfileImage from "../../image/IMG_8109.jpg";
 import ProjectImage from "../../image/projectImage.jpg";
 import ProjectImage2 from "../../image/projectImage2.jpg";
 import ProjectImage3 from "../../image/projectImage3.jpg";
-import { Project1Container, Project1ContentContainer, Project1Contents, Project1Img, Project1Subtitle, Project1Title, Project1Wrapper } from "../../components/Project/Project1";
+import { Project1Container, Project1ContentContainer, Project1Contents, Project1Img, Project1Subtitle, Project1Title, ProjectWrapper } from "../../components/Project/Project1";
 import { Project2Container } from "../../components/Project/project2";
 import { Project3Container } from "../../components/Project/project3";
 
@@ -232,7 +232,7 @@ export const Index = () => {
 
                 </Carousel>
 
-                <Project1Wrapper id='bookstock'>
+                <ProjectWrapper id='bookstock'>
                     <Project1Container>
                         <Project1Title>BookStock</Project1Title>
                         <Project1Subtitle>2022.09 ~ 10 (팀 프로젝트)</Project1Subtitle>
@@ -351,7 +351,7 @@ export const Index = () => {
                             <div></div>
                         </Slider>
                     </Project3Container>
-                </Project1Wrapper>
+                </ProjectWrapper>
             </ProjectSection>
 
             {/* Start Contact Section */}

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-export const Project1Wrapper = styled.div`
+export const ProjectWrapper = styled.div`
     width: 100%;
     padding: 5%;
     background-color: #FFCA28;
@@ -11,6 +11,10 @@ export const Project1Container = styled.div`
     height: 90vh;
     border-radius: 30px;
     padding-top: 3%;
+
+    @media only screen and (max-width: 576px) {
+        height: 60vh;
+    }
 `
 
 export const Project1Title = styled.h1`
@@ -18,11 +22,19 @@ export const Project1Title = styled.h1`
     text-align: center;
     font-size: 45px;
     font-weight: bold;
+
+    @media only screen and (max-width: 576px) {
+        font-size: 1.8rem;
+    }
 `
 
 export const Project1Subtitle = styled.h6`
     color: gray;
     text-align: center;
+
+    @media only screen and (max-width: 576px) {
+        font-size: 1rem;
+    }
 `
 
 export const Project1Img = styled.img`
@@ -32,6 +44,11 @@ export const Project1Img = styled.img`
     width: 80%;
     height: 55vh;
     box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.5);
+
+    @media only screen and (max-width: 576px) {
+        height: 25vh;
+        margin-top: 5vh;
+    }
 `
 
 export const Project1ContentContainer = styled.div`
@@ -40,7 +57,6 @@ export const Project1ContentContainer = styled.div`
 `
 
 export const Project1Contents = styled.div`
-    margin-bottom: 0%;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: bold;
     font-size: 20px;
