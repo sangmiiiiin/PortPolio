@@ -2,6 +2,10 @@ import styled, { keyframes } from "styled-components";
 
 const commonSocialIcon = `
     width: 3vw;
+
+    @media only screen and (max-width: 576px) {
+        width: 6.5vw;
+    }
 `;
 
 export const fadeInUp = keyframes`
