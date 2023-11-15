@@ -9,6 +9,10 @@ export const NavItems = styled.div`
   display: flex;
   gap: 50px;
   margin-top: 0.3vh;
+  
+  @media only screen and (max-width: 768px) {
+    gap: 5vw;
+  }
 `;
 
 export const NavItem = styled.a`
