@@ -39,7 +39,7 @@ export const Project1Subtitle = styled.h6`
 
 export const Project1Img = styled.img`
     margin-top: 3.5%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     margin-left: 10%;
     width: 80%;
     height: 55vh;
@@ -48,6 +48,7 @@ export const Project1Img = styled.img`
     @media only screen and (max-width: 576px) {
         height: 25vh;
         margin-top: 5vh;
+        margin-bottom: 5%;
     }
 `
 
