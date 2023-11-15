@@ -4,6 +4,10 @@ export const ProjectWrapper = styled.div`
     padding: 5%;
     background-color: #FFCA28;
     margin-top: 25vh;
+
+    @media only screen and (max-width: 576px) {
+        margin-top: 10vh;
+    }
 `
 
 export const Project1Container = styled.div`
