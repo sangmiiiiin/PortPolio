@@ -15,6 +15,11 @@ export const SkillImgContainer = styled.div`
     display: flex;
     justify-content: space-around;
     margin-bottom: 10vh;
+
+    && @media only screen and (max-width: 576px) {
+        display: flex;
+        flex-direction: column;
+    }
 `;
 
 export const FrontEndContainer = styled.div`
@@ -24,6 +29,13 @@ export const FrontEndContainer = styled.div`
     flex-wrap: wrap;
     font-size: 2rem;
     font-weight: bold;
+
+    @media only screen and (max-width: 576px) {
+        display: flex;
+        font-size: 1.1rem;
+        width: 90%;
+        
+    }
 `
 export const BackEndContainer = styled.div`
     width: 23vw;
@@ -32,6 +44,12 @@ export const BackEndContainer = styled.div`
     flex-wrap: wrap;
     font-size: 2rem;
     font-weight: bold;
+
+    @media only screen and (max-width: 576px) {
+        display: flex;
+        font-size: 1.1rem;
+        width: 90%;
+    }
 `
 
 export const SkillImg = styled.img`

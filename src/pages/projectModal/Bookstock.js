@@ -39,6 +39,9 @@ export const ProjectModal1 = ({ isOpen, isClose }) => {
                         <li> ☑️ 도서 역경매 등록</li>
                         <li> ☑️ 도서 역경매 입찰</li>
                         <li> ☑️ 도서 역경매 매물 검색</li>
+                        <li> ☑️ 반응형 웹</li>
+                        <li> ☑️ 포인트 충전 기능</li>
+                        <li> ☑️ 회원가입, 로그인</li>
                     </ul>
                 </ExplainContainer>
                 <SubTitle>🔨 SKILLS</SubTitle>
@@ -102,7 +105,15 @@ export const ProjectModal1 = ({ isOpen, isClose }) => {
                 <hr />
                 <ExplainContainer>
                     하나의 서비스를 만들기 위해 기획, 개발, 배포를 모두 체험해 볼수 있는 귀중한 프로젝트 경험이였습니다.
-                    React를 배우고 Component를 제작하는 것으로 시작, Bootstrap을 이용하여 UI/UX를 만들고, 
+                    <StyledText>React</StyledText>를 배우고 <StyledText>Component를 제작</StyledText>하는 것으로 시작, <StyledText>Bootstrap</StyledText>을 이용하여 <StyledText>UI/UX</StyledText>를 만들고, <StyledText>JavaScript</StyledText>를 이용해
+                    숫자 3자리마다 콤마 붙이기, 포인트 충전기능을 만들기 위해 배열을 이용하여 은행 선택 select input을 만들고 사용자에게 금액을 입력받고 유효성 검사를 프론트단에서 실시하는 로직을 만들어보기도 하고 최대한 사용자 경험이 좋게 만들려고 노력하였습니다.
+                    또한 포인트 충전 금액을 데이터베이스에 전달하기 위해 <StyledText>axios 통신 (post)</StyledText>을 이용하여 서버단에 입력받은 금액을 전달 하였고, <StyledText>잔액조회(get)</StyledText> 구현하였으며 잔액이 없는데 출금을 하려고 한다거나 유효하지 않은 값을 입력하였을때 에러처리도 구현해보았습니다.
+                    또한 <StyledText>React-responsive</StyledText> 라이브러리를 이용하여 반응형 웹을 구현하였고 
+                    <br /><br />
+                    첫 프로젝트인 만큼 모든게 서툴고 시간이 한정 되어있는 만큼 아쉬움이 남지만 비전공자 출신만 모여 하나의 구동되는 웹페이지를 만들어 냈다는 점에 큰 보람과 자부심을 느끼고 앞으로 공부해야하는 방향성을 설정하고 자신감을 심어주는 프로젝트 였습니다.
+                    <br /><br />
+                    아쉬웠던점: 동적인 요소들을 웹페이지에 좀 더 웹페이지에 추가했으면 하는 아쉬움이 남습니다. 개인적으로 UI에 신경을 썼다고 생각했지만 배포한 후 아쉬움이 많이 남았고 덕분에 프로젝트를 마치고 CSS를 더 공부할 동기부여가 되었습니다.
+
                 </ExplainContainer>
             </Modal.Body>
 

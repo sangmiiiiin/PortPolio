@@ -53,18 +53,18 @@ export const ProjectModal3 = ({ isOpen, isClose }) => {
                 <SubTitle>🔨 SKILLS</SubTitle>
                 <hr />
                 <SkillImgContainer>
-                        <SkillImg src={HtmlCssJsImg} style={{width: "25vw"}}/>
+                        <SkillImg src={HtmlCssJsImg} style={{ width: "60%" }}/>
                 </SkillImgContainer>
                 <SkillImgContainer>
-                        <SkillImg src={ReactImg} />
-                        <SkillImg src={BootstrapImg} /> 
-                        <SkillImg src={StyledComponentImg} />
+                        <SkillImg src={ReactImg} style={{ width: "23%"}}/>
+                        <SkillImg src={BootstrapImg} style={{ width: "23%"}}/> 
+                        <SkillImg src={StyledComponentImg} style={{ width: "23%"}}/>
                 </SkillImgContainer>
                 
                 <SubTitle>🌐 Deployment</SubTitle>
                 <hr />
                 <DeploymentContainer>
-                    <SkillImg src={NetlifyImg} />
+                    <SkillImg src={NetlifyImg} style={{ width: "23%"}} />
                 </DeploymentContainer>
                 <NetlifyText>Netlify</NetlifyText>
                 

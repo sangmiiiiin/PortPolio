@@ -40,13 +40,13 @@ export const ProjectModal2 = ({ isOpen, isClose }) => {
                 <hr />
                 <SkillImgContainer>
                     <FrontEndContainer>
-                        <SkillImg src={HtmlCssJsImg} style={{width: "30vw"}}/>
+                        <SkillImg src={HtmlCssJsImg} style={{width: "40vw"}}/>
                     </FrontEndContainer>
                 </SkillImgContainer>
                 <SubTitle>🌐 Deployment</SubTitle>
                 <hr />
                 <DeploymentContainer>
-                    <SkillImg src={NetlifyImg} />
+                    <SkillImg src={NetlifyImg} style={{width: "15vw"}}/>
                 </DeploymentContainer>
                 <NetlifyText>Netlify</NetlifyText>
                 
