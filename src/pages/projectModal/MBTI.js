@@ -18,7 +18,7 @@ export const ProjectModal2 = ({ isOpen, isClose }) => {
                 <SubTitle>🔗 Deployment URL</SubTitle>
                 <hr />
                 <DeploymentURL>
-                    <Link to="https://sangmin-mbti.netlify.app">https://sangmin-mbti.netlify.app 👉🏻</Link>
+                    <Link to="https://sm-mbti.netlify.app">https://sm-mbti.netlify.app 👉🏻</Link>
                 </DeploymentURL>
                 
                 <SubTitle>📌 Summary</SubTitle>
