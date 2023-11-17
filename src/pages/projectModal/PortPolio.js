@@ -31,17 +31,20 @@ export const ProjectModal3 = ({ isOpen, isClose }) => {
                     <strong>포트폴리오 제작을 위해 만든 웹사이트 입니다! <br />
                         지금 보고 계시는 이 웹사이트 입니다.</strong> <br /><br />
                     <StyledText>React</StyledText>와 프로젝트때 사용하지 못한 <StyledText>StyledComponent</StyledText>
-                    를 이용하여 CSS 문법을 그대로 사용하며 컴포넌트 Index의 코드 가독성을 높이려 노력하였고, 
+                    를 이용하여 CSS 문법을 그대로 사용하며 컴포넌트의 코드 가독성을 높이려 노력하였고, 
                     <StyledText>keyframes</StyledText>을 이용하여 애니메이션 등 시각적 효과를 사용해 볼 수 있었습니다.<br />
-                    <StyledText>useEffect와 useState</StyledText>를 사용하여 특정 Scroll 위치에서 애니메이션이 동작하도록 구현하였으며,
-                    <StyledText>CustomHook</StyledText>을 사용하여 useEffect를 분리해 사용, hook의 재사용성을 높이고 코드 가독성을 높일수 있었습니다.<br />
-                    + StyledComponent를 사용하니 컴포넌트 파일들이 많아져 로딩이 느리다는 단점이 있다는 사실도 알수 있었습니다.
+                    <StyledText>useEffect와 useState</StyledText>를 사용하여 특정 Scroll 위치에서 애니메이션이 동작하도록 구현하였으며 <StyledText>CustomHook</StyledText>을 사용하여 useEffect를 분리해 사용, hook의 재사용성을 높이고 코드 가독성을 높일수 있었습니다.<br />
+                    StyledComponent를 사용하니 컴포넌트 파일들이 많아져 로딩이 느리다는 단점이 있다는 사실도 알수 있었습니다. 이후에는 협업에 특화되어있는 CSS 전처리기 <StyledText>SASS를</StyledText>
+                    이용하여 코드 가독성을 높이며 성능또한 우수한 웹 애플리케이션을 제작해보자는 방향성도 갖게 하는 프로젝트 였습니다.
                     
                     <br /><br /><br />
 
-                    부트 캠프에서 프로젝트 할 당시 컴포넌트를 잘 분리하지 못하고 부트스트랩을 인라인으로 적용하는 바람에 코드가 굉장히 지저분 했다.
-                    이번 포트폴리오 웹사이트를 만들면서 스타일드 컴포넌트를 이용해서 각 컴포넌트를 확실하게 분리하려고 노력했고 사용해보지 못한 CSS 요소들을 사용해보면서
-                    좀 더 사용자 경험에 긍정적인 웹사이트를 만들어볼 좋은 프로젝트였다고 생각합니다.
+                    부트 캠프에서 프로젝트를 진행할 당시 bootstrap을 인라인 스타일로 사용하여 다소 컴포넌트 코드 가독성이 아쉬웠지만
+                    이번 포트폴리오 웹페이지를 만들면서 스타일드 컴포넌트를 이용해서 각 컴포넌트를 확실하게 분리하려고 노력했고 사용해보지 못한 CSS 요소들을 사용해보면서
+                    더욱 동적인 웹페이지와 사용자가 보기에 이목을 끌수 있는 방법에 대해 생각해볼수 있었습니다.<br /><br />
+
+                    <StyledText>GitMoji</StyledText>를 처음으로 사용해 버전관리에 좀 더 가독성 좋은 커밋을 하려고 노력하였으며 <br />
+                    <StyledText>Netlify</StyledText>를 이용해 처음으로 나만의 프로젝트를 배포하게 되어 엄청난 성취감을 느낄수 있었습니다.
                     
                     <ul>
                         <h4 style={{marginTop:"5vh"}}>주요기능</h4>
