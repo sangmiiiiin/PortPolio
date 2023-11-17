@@ -158,9 +158,8 @@ export const Index = () => {
                                 </ProjectName>
 
                                 <ProjectMemo>
-                                    직접 만든 포트폴리오를 통해<br />
-                                    경험치 상승! 여러가지 모듈 사용!<br />
-                                    코딩 너무너무 재밌다 Redux 공부하자<br />
+                                    직접 만든 포트폴리오 웹사이트를 통해<br />
+                                    경험치 상승! 여러가지 라이브러리 사용!<br />
                                     코드 리팩토링도 하자!
                                 </ProjectMemo>
 
