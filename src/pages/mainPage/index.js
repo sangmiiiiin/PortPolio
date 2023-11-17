@@ -331,7 +331,6 @@ export const Index = () => {
                                     </Project1Contents>
                                 </Project1ContentContainer>
                             </div>                      
-                            <div></div>
                         </Slider>
                     </Project2Container>
                     <div id="MBTI"></div>
@@ -347,7 +346,6 @@ export const Index = () => {
                                     </Project1Contents>
                                 </Project1ContentContainer>
                             </div>
-                            <div></div>
                         </Slider>
                     </Project3Container>
                 </ProjectWrapper>

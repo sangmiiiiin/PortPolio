@@ -34,7 +34,9 @@ export const ProjectModal3 = ({ isOpen, isClose }) => {
                     를 이용하여 CSS 문법을 그대로 사용하며 컴포넌트 Index의 코드 가독성을 높이려 노력하였고, 
                     <StyledText>keyframes</StyledText>을 이용하여 애니메이션 등 시각적 효과를 사용해 볼 수 있었습니다.<br />
                     <StyledText>useEffect와 useState</StyledText>를 사용하여 특정 Scroll 위치에서 애니메이션이 동작하도록 구현하였으며,
-                    <StyledText>CustomHook</StyledText>을 사용하여 useEffect를 분리해 사용, hook의 재사용성을 높이고 코드 가독성을 높일수 있었습니다.
+                    <StyledText>CustomHook</StyledText>을 사용하여 useEffect를 분리해 사용, hook의 재사용성을 높이고 코드 가독성을 높일수 있었습니다.<br />
+                    + StyledComponent를 사용하니 컴포넌트 파일들이 많아져 로딩이 느리다는 단점이 있다는 사실도 알수 있었습니다.
+                    
                     <br /><br /><br />
 
                     부트 캠프에서 프로젝트 할 당시 컴포넌트를 잘 분리하지 못하고 부트스트랩을 인라인으로 적용하는 바람에 코드가 굉장히 지저분 했다.
