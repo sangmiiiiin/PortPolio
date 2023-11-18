@@ -37,7 +37,7 @@ import { Link } from "react-scroll";
 import { ProjectModal2 } from "../projectModal/MBTI";
 import { ProjectModal3 } from "../projectModal/PortPolio";
 import { ContactButton, ContactContainer, ContactContents, ContactTitle, Email } from "../../components/contact/contactSection";
-import { ArchiveContainer, ArchiveGithub, ArchiveTitle, ArchiveVelog, ArchiveWrapper, GithubTitle, VelogTitle } from "../../components/Archive/Archive";
+import { ArchiveContainer, ArchiveGithub, ArchiveTitle, ArchiveVelog, ArchiveWrapper, GithubLi, GithubTitle, GithubUl, GoToGithub, GoToVelog, VelogLi, VelogTitle, VelogUl } from "../../components/Archive/Archive";
 
 
 
@@ -104,23 +104,48 @@ export const Index = () => {
 
             <ArchiveWrapper>
                 <ArchiveTitle>
-                    Archive
+                    A r c h i v e
                 </ArchiveTitle>
                 <ArchiveContainer>
                     <div></div>
-                    <ArchiveGithub>
-                        <GithubTitle src={GithubLogo}></GithubTitle>
-                    </ArchiveGithub>
-                    <ArchiveVelog>
-                        <VelogTitle src={VelogIo}></VelogTitle>
-                    </ArchiveVelog>
+                    <GoToGithub href="https://github.com/sangmiiiiin">
+                        <ArchiveGithub>
+                            <GithubTitle src={GithubLogo}></GithubTitle>
+                            <GithubUl>
+
+                                <GithubLi style={{
+                                                textDecoration: "underline",
+                                                color: "blue"
+                                                }}>
+                                    https://github.com/sangmiiiiin
+                                </GithubLi>
+                                <GithubLi>소스 코드 저장소 입니다.</GithubLi>
+                                <GithubLi>그동안 해왔던 프로젝트와 코드를 업로드 합니다.</GithubLi>
+                            </GithubUl>
+                        </ArchiveGithub>
+                    </GoToGithub>
+                    <GoToVelog href="https://velog.io/@sangmiiiiin">
+                        <ArchiveVelog>
+                            <VelogTitle src={VelogIo}></VelogTitle>
+                            <VelogUl>
+                                <VelogLi style={{
+                                                textDecoration: "underline",
+                                                color: "blue"
+                                                }}>
+                                    https://velog.io/@sangmiiiiin
+                                </VelogLi>
+                                <VelogLi>지식을 진짜 내것으로 만들기 위해 기록합니다.</VelogLi>
+                                <VelogLi>공부한 내용들을 적어두고 있습니다.</VelogLi>
+                            </VelogUl>
+                        </ArchiveVelog>
+                    </GoToVelog>
                 </ArchiveContainer>
             </ArchiveWrapper>
 
 
             <div id="project"></div>
             <ProjectSection>
-                <ProjectTitle>Project</ProjectTitle>
+                <ProjectTitle>P r o j e c t</ProjectTitle>
                 <Carousel
                     interval={4500}
                     indicators={true}
