@@ -120,6 +120,7 @@ export const Index = () => {
                                     https://github.com/sangmiiiiin
                                 </GithubLi>
                                 <GithubLi>소스 코드 저장소 입니다.</GithubLi>
+                                <GithubLi>포트폴리오를 구축하기 위함 입니다.</GithubLi>
                                 <GithubLi>그동안 해왔던 프로젝트와 코드를 업로드 합니다.</GithubLi>
                             </GithubUl>
                         </ArchiveGithub>
@@ -134,8 +135,9 @@ export const Index = () => {
                                                 }}>
                                     https://velog.io/@sangmiiiiin
                                 </VelogLi>
-                                <VelogLi>지식을 진짜 내것으로 만들기 위해 기록합니다.</VelogLi>
-                                <VelogLi>공부한 내용들을 적어두고 있습니다.</VelogLi>
+                                <VelogLi>지식을 진짜 내것으로 만들기 위해.</VelogLi>
+                                <VelogLi>문제 해결책을 찾기 쉽게 하기 위해.</VelogLi>
+                                <VelogLi>개발 과정에서 얻은 지식을 공유하기 위해.</VelogLi>
                             </VelogUl>
                         </ArchiveVelog>
                     </GoToVelog>
