@@ -24,6 +24,8 @@ import searchImg from "../../image/bookStockSearch.gif";
 import pointImg from "../../image/Point.gif";
 import TradingImg from "../../image/myPage.gif";
 import TradingImg2 from "../../image/myPage2.gif";
+import GithubLogo from "../../image/githubLogo.jpg";
+import VelogIo from "../../image/VelogTitle.png";
 
 import portPolioMainImg from '../../image/portpolioMain.gif';
 
@@ -35,6 +37,7 @@ import { Link } from "react-scroll";
 import { ProjectModal2 } from "../projectModal/MBTI";
 import { ProjectModal3 } from "../projectModal/PortPolio";
 import { ContactButton, ContactContainer, ContactContents, ContactTitle, Email } from "../../components/contact/contactSection";
+import { ArchiveContainer, ArchiveGithub, ArchiveTitle, ArchiveVelog, ArchiveWrapper, GithubTitle, VelogTitle } from "../../components/Archive/Archive";
 
 
 
@@ -98,6 +101,23 @@ export const Index = () => {
                     </div>
                 </Fade>
             </AboutSection>
+
+            <ArchiveWrapper>
+                <ArchiveTitle>
+                    Archive
+                </ArchiveTitle>
+                <ArchiveContainer>
+                    <div></div>
+                    <ArchiveGithub>
+                        <GithubTitle src={GithubLogo}></GithubTitle>
+                    </ArchiveGithub>
+                    <ArchiveVelog>
+                        <VelogTitle src={VelogIo}></VelogTitle>
+                    </ArchiveVelog>
+                </ArchiveContainer>
+            </ArchiveWrapper>
+
+
             <div id="project"></div>
             <ProjectSection>
                 <ProjectTitle>Project</ProjectTitle>
@@ -183,7 +203,7 @@ export const Index = () => {
                                         시연이미지 →
                                     </Link>
                                 </StyledButton2>
-                                <ProjectModal3 isOpen={showPoPol} isClose={closePoPol}/>
+                                <ProjectModal3 isOpen={showPoPol} isClose={closePoPol} />
                             </ProjectDetail>
                         </ProjectContainer>
                     </CarouselItem>
@@ -330,7 +350,7 @@ export const Index = () => {
                                         ✔️ 메인페이지
                                     </Project1Contents>
                                 </Project1ContentContainer>
-                            </div>                      
+                            </div>
                         </Slider>
                     </Project2Container>
                     <div id="MBTI"></div>
@@ -367,7 +387,7 @@ export const Index = () => {
                     <Email>{email}</Email>
                 </ContactButton>
             </ContactContainer>
-            
+
         </>
     );
 }
