@@ -105,7 +105,7 @@ export const GithubLi = styled.li`
     font-size: 1.2rem;
 
     @media only screen and (max-width: 576px) {
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
     
 `;
@@ -114,7 +114,7 @@ export const VelogLi = styled.li`
     font-size: 1.2rem;
 
     @media only screen and (max-width: 576px) {
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
 `;
 
