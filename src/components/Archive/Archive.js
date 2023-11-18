@@ -1,4 +1,13 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const transformY = keyframes`
+    from {
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-5px);
+    }
+`
 
 export const ArchiveWrapper = styled.div`
     background-color: #424242;
@@ -33,6 +42,11 @@ export const ArchiveGithub = styled.div`
     background-color: white;
     width: 40vw;
     border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        animation: ${transformY} 0.3s ease-in-out forwards;
+    }
 
     @media only screen and (max-width: 576px) {
         width: 90vw;
@@ -46,6 +60,11 @@ export const ArchiveVelog = styled.div`
     background-color: white;
     width: 40vw;
     border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        animation: ${transformY} 0.3s ease-in-out forwards;
+    }
 
     @media only screen and (max-width: 576px) {
         width: 90vw;
