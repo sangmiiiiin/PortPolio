@@ -1,5 +1,4 @@
 import styled, { keyframes } from "styled-components";
-
 const transformY = keyframes`
     from {
         transform: translateY(0px);
@@ -103,6 +102,7 @@ export const VelogUl = styled.ul`
 
 export const GithubLi = styled.li`
     font-size: 1.2rem;
+    font-family: 'Orbit', sans-serif;
 
     @media only screen and (max-width: 576px) {
         font-size: 1rem;
@@ -112,6 +112,7 @@ export const GithubLi = styled.li`
 
 export const VelogLi = styled.li`
     font-size: 1.2rem;
+    font-family: 'Orbit', sans-serif;
 
     @media only screen and (max-width: 576px) {
         font-size: 1rem;
