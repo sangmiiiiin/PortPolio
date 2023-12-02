@@ -134,7 +134,7 @@ export const CSS = styled(Form.Label)`
 
 export const JavaScript = styled(Form.Label)`
     ${technologiesUsed}
-    background-color: Yellow;
+    background-color: #FDD835;
     color: white;
     margin-left: 0.5vw;
 `

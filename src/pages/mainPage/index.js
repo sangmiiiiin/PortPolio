@@ -26,6 +26,7 @@ import TradingImg from "../../image/myPage.gif";
 import TradingImg2 from "../../image/myPage2.gif";
 import GithubLogo from "../../image/githubLogo.jpg";
 import VelogIo from "../../image/VelogTitle.png";
+import MomentumImg from "../../image/Momentum.jpg";
 
 import portPolioMainImg from '../../image/portpolioMain.gif';
 
@@ -38,6 +39,7 @@ import { ProjectModal2 } from "../projectModal/MBTI";
 import { ProjectModal3 } from "../projectModal/PortPolio";
 import { ContactButton, ContactContainer, ContactContents, ContactTitle, Email } from "../../components/contact/contactSection";
 import { ArchiveContainer, ArchiveGithub, ArchiveTitle, ArchiveVelog, ArchiveWrapper, GithubLi, GithubTitle, GithubUl, GoToGithub, GoToVelog, VelogLi, VelogTitle, VelogUl } from "../../components/Archive/Archive";
+import { ProjectModal4 } from "../projectModal/Momentum";
 
 
 
@@ -46,6 +48,7 @@ export const Index = () => {
     const [profile, setProfile] = useState(false);
     const [projectImg, setProjectImg] = useState(false);
     const [projectDetail, setProjectDetail] = useState(false);
+    const [showMomentum, setShowMomentum] = useState(false);
     const [showBookStock, setShowBookStock] = useState(false);
     const [showMBTI, setShowMBTI] = useState(false);
     const [showPoPol, setShowPoPol] = useState(false);
@@ -149,9 +152,50 @@ export const Index = () => {
             <ProjectSection>
                 <ProjectTitle>P r o j e c t</ProjectTitle>
                 <Carousel
-                    interval={4500}
+                    interval={30000}
                     indicators={true}
                 >
+                    <CarouselItem>
+                        <ProjectContainer>
+                            <ProjectImg $fadeLeft={projectImg} src={MomentumImg} />
+                            <ProjectDetail $fadeRight={projectDetail}>
+                                <ProjectName>
+                                    Momentum 클론코딩
+                                </ProjectName>
+
+                                <ProjectMemo>
+                                    VanilaJS를 이용한 Momentum APP 클론코딩<br/>
+                                    친절한 JS의 내장함수를 사용해보고<br />
+                                    컴퓨팅 적 사고력을 향상 시키기 위해<br />
+                                    JS와 친해지기 위해 진행!
+                                </ProjectMemo>
+
+                                <HTML>
+                                    HTML
+                                </HTML>
+
+                                <CSS>
+                                    CSS
+                                </CSS>
+
+                                <JavaScript>
+                                    JavaScript
+                                </JavaScript><br/>
+
+                                <StyledButton onClick={() => setShowMomentum(true)}>
+                                    자세히보기 →
+                                </StyledButton>
+
+                                <StyledButton2>
+                                    <Link to='bookstock'>
+                                        시연이미지 →
+                                    </Link>
+                                </StyledButton2>
+                                <ProjectModal4 isOpen={showMomentum} isClose={() => setShowMomentum(false)} />
+                            </ProjectDetail>
+                        </ProjectContainer>
+                    </CarouselItem>
+
                     <CarouselItem>
                         <ProjectContainer>
                             <ProjectImg $fadeLeft={projectImg} src={ProjectImage} />
