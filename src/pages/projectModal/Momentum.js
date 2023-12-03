@@ -119,7 +119,7 @@ export const ProjectModal4 = ({ isOpen, isClose }) => {
                     데이터 타입을 사용가능하게 바꾸는 과정에서 어려움을 느꼈지만 콘솔과 typeof를 이용하여 데이터 타입을 확인하며 문제를 해결해 나갔습니다
                     Delete를 구현할때 filter 메소드를 사용하면서 true로 반환되는것을 배열에서 남기고 false를 제외하여 새로운 배열에 담는다는 사실을 알게되어
                     엄격한 부등 연산자를 통해 클릭한 요소의 id와 li의 id와 비교하여 같지 않으면 true를 반환하게 하고 같으면 false를 반환하게 하여 
-                    이 배열을 실제 localStorage의 배열로 업데이트 함으로써 CRD 구현에 성공 하였습니다. 
+                    이 배열을 실제 localStorage의 배열로 업데이트 함으로써 CRD 구현에 성공 하였습니다. <br/><br/>
 
 
                     마지막으로 위치 정보와<StyledText>외부 API</StyledText>를 이용하여 내가 있는 위치의 날씨와 온도를 브라우저에 문자열로 출력 했습니다
