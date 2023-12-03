@@ -24,16 +24,19 @@ import searchImg from "../../image/bookStockSearch.gif";
 import pointImg from "../../image/Point.gif";
 import TradingImg from "../../image/myPage.gif";
 import TradingImg2 from "../../image/myPage2.gif";
+
 import GithubLogo from "../../image/githubLogo.jpg";
 import VelogIo from "../../image/VelogTitle.png";
+
 import MomentumImg from "../../image/Momentum.jpg";
-
 import portPolioMainImg from '../../image/portpolioMain.gif';
-
 import MbtiMainImg from '../../image/MBTImainImg.gif';
+import MomentumGif from "../../image/momentum_service.gif";
+
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+
 import { Link } from "react-scroll";
 import { ProjectModal2 } from "../projectModal/MBTI";
 import { ProjectModal3 } from "../projectModal/PortPolio";
@@ -445,7 +448,7 @@ export const Index = () => {
                         <Project1Subtitle>2023.11 (개인 프로젝트)</Project1Subtitle>
                         <Slider {...settings}>
                             <div>
-                                <Project1Img src={MbtiMainImg} alt="Momentum 메인페이지" />
+                                <Project1Img src={MomentumGif} alt="Momentum 메인페이지" />
                                 <Project1ContentContainer>
                                     <Project1Contents>
                                         ✔️ 서비스페이지
