@@ -166,7 +166,7 @@ export const Index = () => {
                                 <ProjectMemo>
                                     VanilaJS를 이용한 Momentum APP 클론코딩<br/>
                                     친절한 JS의 내장함수를 사용해보고<br />
-                                    컴퓨팅 적 사고력을 향상 시키기 위해<br />
+                                    컴퓨팅 사고력을 향상 시키기 위해<br />
                                     JS와 친해지기 위해 진행!
                                 </ProjectMemo>
 
