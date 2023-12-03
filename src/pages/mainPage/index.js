@@ -152,7 +152,7 @@ export const Index = () => {
             <ProjectSection>
                 <ProjectTitle>P r o j e c t</ProjectTitle>
                 <Carousel
-                    interval={30000}
+                    interval={5000}
                     indicators={true}
                 >
                     <CarouselItem>
@@ -433,7 +433,22 @@ export const Index = () => {
                                 <Project1Img src={MbtiMainImg} alt="MBTI 테스트 페이지" />
                                 <Project1ContentContainer>
                                     <Project1Contents>
-                                        ✔️ 메인페이지
+                                        ✔️ 서비스 페이지
+                                    </Project1Contents>
+                                </Project1ContentContainer>
+                            </div>
+                        </Slider>
+                    </Project3Container>
+
+                    <Project3Container>
+                    <Project1Title>Momentum App 클론코딩</Project1Title>
+                        <Project1Subtitle>2023.11 (개인 프로젝트)</Project1Subtitle>
+                        <Slider {...settings}>
+                            <div>
+                                <Project1Img src={MbtiMainImg} alt="Momentum 메인페이지" />
+                                <Project1ContentContainer>
+                                    <Project1Contents>
+                                        ✔️ 서비스페이지
                                     </Project1Contents>
                                 </Project1ContentContainer>
                             </div>
