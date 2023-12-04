@@ -1,6 +1,7 @@
 import { Modal, Button } from 'react-bootstrap';
-import { ExplainContainer,  SkillImg, SkillImgContainer, StyledText, SubTitle} from '../../components/Project/ModalComponent';
+import { DeploymentURL, ExplainContainer,  SkillImg, SkillImgContainer, StyledText, SubTitle} from '../../components/Project/ModalComponent';
 import htmlcssjsImg from '../../image/HTMLCSSJS.png';
+import { Link } from 'react-router-dom';
 
 
 export const ProjectModal4 = ({ isOpen, isClose }) => {
@@ -15,6 +16,11 @@ export const ProjectModal4 = ({ isOpen, isClose }) => {
                 <Modal.Title>Momentum APP</Modal.Title>
             </Modal.Header>
             <Modal.Body>
+                <SubTitle>🔗 Deployment URL</SubTitle>
+                <hr />
+                <DeploymentURL>
+                    <Link to="https://sangmin-momentum.netlify.app">https://sangmin-momentum.netlify.app 👉🏻</Link>
+                </DeploymentURL>
                 <SubTitle>📌 Summary</SubTitle>
                 <hr />
                 <ExplainContainer>
@@ -80,7 +86,7 @@ export const ProjectModal4 = ({ isOpen, isClose }) => {
                 <SubTitle>🔨 SKILLS</SubTitle>
                 <hr />
                 <SkillImgContainer>
-                    <SkillImg src={htmlcssjsImg} style={{ width: "50vw" }} />
+                    <SkillImg src={htmlcssjsImg} style={{ width: "40vw" }} />
                 </SkillImgContainer>
 
                 <SubTitle>🔍 Meaning</SubTitle>
